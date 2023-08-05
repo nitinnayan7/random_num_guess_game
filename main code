@@ -10,9 +10,9 @@ def guess():
         if x>ran_num:
             print("Too High guess!!!!!!")
         elif x<ran_num:
-            print("Top Low guess!!!!!!")
+            print("Too Low guess!!!!!!")
         else:
-            print("Yaaay!!! you guessed it in {} attmepts".format(att))
+            print("Yaaay!!! you guessed it in {} attempts".format(att))
             break
 guess()
     
