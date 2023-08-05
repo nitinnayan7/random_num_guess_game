@@ -1,0 +1,18 @@
+import random as r
+ran_num=r.randint(1,100)
+name=input("ENTER NAME:")
+print("WELCOME {} TO THE GAME".format(name))
+def guess():
+    att=0
+    while True:
+        x=int(input("ENTER YOUR GUESS:"))
+        att+=1
+        if x>ran_num:
+            print("Too High guess!!!!!!")
+        elif x<ran_num:
+            print("Top Low guess!!!!!!")
+        else:
+            print("Yaaay!!! you guessed it in {} attmepts".format(att))
+            break
+guess()
+    
